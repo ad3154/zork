@@ -1,2 +1,4 @@
 *.o
 zork
+PIC32ZorkPort.x\dist\
+PIC32ZorkPort.x\build\
