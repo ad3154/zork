@@ -1,34 +1,5 @@
-```
-Welcome to Dungeon.			This version created 11-MAR-91.
-You are in an open field west of a big white house with a boarded
-front door.
-There is a small mailbox here.
->
-```
-# DUNGEON (Zork I)
-
-PIC32 Port of the Public Domain source code to the original DUNGEON game (Zork I). Released to the PD by Infocom. Includes 
-source files, headers, information, and MPLABX project files.
-
-# Compilation and Supported Devices
-
-This project is meant to be compiled with the XC32 C/C++ compiler from Microchip Technology Inc.
-Prerequisites:
-PIC32 Legacy Peripheral Libraries
-XC32 Compiler
-Recommended: MPLABX IDE 3.30 or above
-
-This has been tested on the PIC32MX795F512L, specifically on the Digilent MAX32 Board
-It should require only minor tweaking (clock speeds and such) to get it working well on other boards.
-Data memory space might be an issue on other devices, as this program occupies 62 percent of the PIC32MX795F512L's 512K of flash.
-
-# Port Notes
-
-I had to rewrite all of the C standard library's file handling functionality to work with constant arrays in memory, since the PIC32 has no file system.
-
-I have also redirected all printf output to UART1 of this particular device.
-
-## History of the C Implementation of Dungeon
+	History of the C Implementation of Dungeon
+	==========================================
 
 This version of dungeon has been modified from FORTRAN to C.  The
 original was written in DEC FORTRAN, translated from MDL.  It was then
@@ -40,10 +11,10 @@ Schryer (AT&T Bell Labs).
 
 I. From the original documentation...
 
-To: Dungeon Players
-From: "The Translator"
-Subj: Game Information
-Date: 8-OCT-80
+To:	Dungeon Players
+From:	"The Translator"
+Subj:	Game Information
+Date:	8-OCT-80
 
 
 This is the first (and last) source release of the PDP-11 version of 
@@ -73,9 +44,10 @@ ZORK(tm) is a trademark of Infocom, Inc.  It is available for several
 popular personal computers as well as for the PDP-ll.
 
 
-## Summary
+SUMMARY
+-------
 
-   Welcome to Dungeon!
+		    Welcome to Dungeon!
 
    Dungeon is a game of adventure, danger, and low cunning.  In it
 you will explore some of the most amazing territory ever seen by mortal
@@ -140,4 +112,3 @@ to remove the FORTRAN I/O library, to add simple more processing, and
 to change the format of the database file.  Andre Srinivasan
 (andre@cs.pitt.edu) help test it.  Jonathan Mark
 (uunet!microsoft!jonm) made it work under MS-DOS and Microsoft C.
-
